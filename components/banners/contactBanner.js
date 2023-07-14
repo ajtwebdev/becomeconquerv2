@@ -23,6 +23,11 @@ const Wrapper = styled.div`
 
   min-height: 60vh;
   height: 100%;
+
+  @media screen and(max-width: 36em) {
+    min-height: 110vh;
+    height: 100%;
+  }
 `;
 
 const Text = styled.div`

@@ -14,12 +14,12 @@ const device = {
 };
 
 const HeroWrapper = styled.div`
-  background: ${(props) => `url(${props.img})`}, rgba(0, 0, 0, 0.8);
+  background: ${(props) => `url(${props.img})`}, rgba(0, 0, 0, 0.3);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 60vh;
+  min-height: 80vh;
   height: 100%;
 
   display: grid;

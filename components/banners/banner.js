@@ -17,11 +17,11 @@ const Wrapper = styled.div`
   display: grid;
   place-items: center;
 
-  min-height: 40vh;
+  min-height: 60vh;
   height: 100%;
 
-  @media screen and (max-width: 26em) {
-    min-height: 100vh;
+  @media screen and(max-width: 36em) {
+    min-height: 110vh;
     height: 100%;
   }
 `;
