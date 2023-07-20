@@ -9,16 +9,13 @@ import { BiSupport } from "react-icons/bi";
 
 const Text = styled.div``;
 
-const List = styled.ul`
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-  li {
-    line-height: 1.1;
-    display: flex;
-    align-items: center;
-    font-size: var(--fs-2);
-    text-transform: capitalize;
+const List = styled.div``;
+
+const ListFlex = styled.div`
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 32em) {
+    flex-direction: column;
   }
 `;
 
@@ -38,7 +35,7 @@ const Img = styled.div`
 const IconStyle = {
   fontSize: "70px",
   color: "var(--clr-accent)",
-  paddingRight: "15px",
+  paddingRight: "5px",
 };
 
 export default function Plans1({ subheader, title, text, image }) {
@@ -53,22 +50,47 @@ export default function Plans1({ subheader, title, text, image }) {
                 <h2 className="title bold">{title}</h2>
               </div>
             </Text>
-            <List className="bold spacing">
-              <li>
-                <BsFillLightningChargeFill style={IconStyle} /> Supercharged
-                signature “KICK STARTER CHALLENGE” <br />
-              </li>
-              <li>
-                <GiTalk style={IconStyle} />
-                Weekly one-on-one meetings for unwavering support & guidance
-              </li>
-              <li>
-                <BsPersonCircle style={IconStyle} />A powerful meditation
-                written & audio record (a letter from your future self)
-              </li>
-              <li>
-                <BiSupport style={IconStyle} /> 24/7 Support
-              </li>
+            <List className="spacing">
+              <ListFlex>
+                <BsFillLightningChargeFill style={IconStyle} />
+                <div>
+                  <h3 className="bold subheader">
+                    Cultivate Emotional Strength
+                  </h3>
+                  <p>
+                    Develop resilience and emotional intelligence to navigate
+                    life's challenges with grace and poise. Gain the ability to
+                    stay centered and composed in the face of adversity,
+                    empowering you to make better decisions.
+                  </p>
+                </div>
+              </ListFlex>
+              <ListFlex>
+                <BsFillLightningChargeFill style={IconStyle} />
+                <div>
+                  <h3 className="bold subheader">
+                    Become A Confident Decision Maker
+                  </h3>
+                  <p>
+                    Learn effective decision-making strategies that with your
+                    true desires and values. Say goodbye to second-guessing and
+                    hesitation as you step into a new era of clarity and
+                    conviction.
+                  </p>
+                </div>
+              </ListFlex>
+              <ListFlex>
+                <BsFillLightningChargeFill style={IconStyle} />
+                <div>
+                  <h3 className="bold subheader">Find Your Authentic Voice</h3>
+                  <p>
+                    Break free from the limitations imposed by others and
+                    discover your own unique identity. Unleash the power of
+                    self-expression and confidently share your thoughts,
+                    opinions, and ideas with the world.
+                  </p>
+                </div>
+              </ListFlex>
             </List>
             <hr />
             <p>{text}</p>
@@ -78,7 +100,7 @@ export default function Plans1({ subheader, title, text, image }) {
               }}
             ></div> */}
             <ButtonPrimary href="/contact">
-              book a free 90-minute consultation &#8594;
+              book a free 30-minute consultation &#8594;
             </ButtonPrimary>
           </div>
           <Img>

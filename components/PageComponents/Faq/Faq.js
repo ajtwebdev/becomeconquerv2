@@ -70,17 +70,13 @@ export default function FaqFeatured({ title, body, questions }) {
                 <h2 className="title">frequently asked questions</h2>
               </div>
               <p>
-                {body ? (
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: `${body}`,
-                    }}
-                  />
-                ) : null}
+                Through a unique blend of guidance and support, you will
+                discover the courage within you to take bold steps towards your
+                dreams.
               </p>
-              <ButtonPrimary href="/contact">
+              {/* <ButtonPrimary href="/contact">
                 book a free consultation
-              </ButtonPrimary>
+              </ButtonPrimary> */}
             </div>
           </FlexMobileOpp>
         </Container>

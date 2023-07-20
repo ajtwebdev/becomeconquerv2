@@ -24,7 +24,7 @@ const ReviewWrapper = styled.div`
 `;
 
 const Wrapper = styled.div`
-  background: url("/testimonial-bg.jpg");
+  background: url("http://www.become-conquer.purpleparrotwebsites.com/wp-content/uploads/2023/06/image-16.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

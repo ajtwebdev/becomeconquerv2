@@ -22,7 +22,7 @@ export default function Footer() {
       <div className={styles.footerWrapperTop}>
         <div className={styles.container}>
           <div className="container spacing">
-            <center>
+            {/* <center>
               <div className="spacing">
                 <Image
                   width={300}
@@ -32,7 +32,7 @@ export default function Footer() {
                 />
               </div>
             </center>
-            <hr />
+            <hr /> */}
             <div className={styles.flex}>
               <div className={styles.flex}>
                 <div className="">

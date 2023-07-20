@@ -27,7 +27,10 @@ const List = styled.div`
   z-index: 2;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  @media screen and (max-width: 48em) {
+    grid-template-columns: 1fr;
+  }
   grid-gap: 2em;
 
   ul {

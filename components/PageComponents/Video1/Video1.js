@@ -9,6 +9,15 @@ import {
   Section,
 } from "../../layoutComponents";
 
+const Wrapper = styled.div`
+  // background: url("/faq-bg.png"), rgba(255, 255, 255, 0.6);
+  // background-blend-mode: overlay;
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // color: var(--txt-light);
+`;
+
 const TextTop = styled.div`
   text-align: center;
 
@@ -47,52 +56,54 @@ const Video = styled.div`
 
 export default function Video1({ subheader, title, text, video }) {
   return (
-    <Section>
-      <div className="spacing-lg">
-        <TextTop>
-          <h2 className="subheader accent">{subheader}</h2>
-          <h3 className="title">{title}</h3>
-        </TextTop>
-        <FlexMobileOpp className="spacing">
-          <Text>
-            <Container className="spacing">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: `${text}`,
-                }}
-              ></div>
+    <Wrapper>
+      <Section>
+        <div className="spacing-lg">
+          <TextTop>
+            <h2 className="subheader accent">{subheader}</h2>
+            <h3 className="title">{title}</h3>
+          </TextTop>
+          <FlexMobileOpp className="spacing">
+            <Text>
+              <Container className="spacing">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: `${text}`,
+                  }}
+                ></div>
 
-              <Actions>
-                <ButtonPrimaryDark href="/about">
-                  more about adriana
-                </ButtonPrimaryDark>
-                <ButtonPrimary href="/contact">
-                  book your consultation
-                </ButtonPrimary>
-              </Actions>
-            </Container>
-          </Text>
+                <Actions>
+                  <ButtonPrimaryDark href="/about">
+                    more about adriana
+                  </ButtonPrimaryDark>
+                  <ButtonPrimary href="/contact">
+                    book your consultation
+                  </ButtonPrimary>
+                </Actions>
+              </Container>
+            </Text>
 
-          <Grid>
-            <Bg />
-            <Video style={{ position: "relative" }}>
-              <iframe
-                src={video}
-                frameBorder={0}
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                title="Turning your mess into your mastery with Adriana Van Der Merwe"
-                style={{
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "600px",
-                }}
-              />
-            </Video>
-          </Grid>
-        </FlexMobileOpp>
-      </div>
-    </Section>
+            <Grid>
+              <Bg />
+              <Video style={{ position: "relative" }}>
+                <iframe
+                  src={video}
+                  frameBorder={0}
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title="Turning your mess into your mastery with Adriana Van Der Merwe"
+                  style={{
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "600px",
+                  }}
+                />
+              </Video>
+            </Grid>
+          </FlexMobileOpp>
+        </div>
+      </Section>
+    </Wrapper>
   );
 }

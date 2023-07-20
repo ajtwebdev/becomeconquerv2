@@ -30,11 +30,10 @@ const NavList = styled.ul`
     display: ${({ nav }) => (nav ? "flex" : "none")};
     align-items: center;
     position: absolute;
-    top: 140px;
+    top: 125px;
     left: 0;
     right: 0;
     flex-direction: column;
-    align-items: start;
     width: 100%;
     background: var(--clr-light);
     box-shadow: var(--shadow-bottom);
@@ -145,12 +144,16 @@ export default function HeaderBasic() {
           <div className={styles.container}>
             <div className={styles.logoContainer}>
               <Link className={styles.styledLink} href="/">
-                <Image
+                <div>
+                  <h3 className=" light">become & conquer</h3>
+                  <p className="sig light">with adriana</p>
+                </div>
+                {/* <Image
                   src="/bc-logo.svg"
                   alt="mindset coach logo"
                   height={100}
                   width={170}
-                />
+                /> */}
               </Link>
             </div>
             <nav className={styles.nav}>
@@ -181,7 +184,7 @@ export default function HeaderBasic() {
                   </Link>
                 </li>
                 <li>
-                  <Link className={styles.getQuote} href="/contact">
+                  <Link className={styles.getQuote} href="/booking">
                     free consultation &#8594;
                   </Link>
                 </li>

@@ -51,7 +51,7 @@ export default function Hero({ title, description, image }) {
           </h1>
           <p className="">{description}</p>
           <ButtonPrimary href="/contact">
-            book a free 90-minute consultation &#8594;
+            book a free 30-minute consultation &#8594;
           </ButtonPrimary>
         </Text>
       </Container>
