@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, Section, Flex } from "../../layoutComponents";
-import { ButtonPrimary } from "../../buttons";
+import { ButtonSecondaryDark } from "../../buttons";
 import Image from "../../Image";
 import { BsFillLightningChargeFill, BsPersonCircle } from "react-icons/bs";
 import { GiTalk } from "react-icons/gi";
@@ -14,6 +14,10 @@ const List = styled.div``;
 const ListFlex = styled.div`
   display: flex;
   align-items: center;
+  padding: 2em;
+  color: var(--txt-light);
+  box-shadow: var(--shadow-light);
+  background: var(--clr-accent);
   @media screen and (max-width: 32em) {
     flex-direction: column;
   }
@@ -22,7 +26,7 @@ const ListFlex = styled.div`
 const Img = styled.div`
   figure {
     div {
-      // box-shadow: 20px -20px 0px 1px var(--clr-accent);
+      box-shadow: 20px -20px 0px 1px var(--clr-dark-secondary);
       img {
         max-height: 600px;
         min-height: 400px;
@@ -34,7 +38,7 @@ const Img = styled.div`
 
 const IconStyle = {
   fontSize: "70px",
-  color: "var(--clr-accent)",
+  color: "var(--clr-light)",
   paddingRight: "5px",
 };
 
@@ -54,7 +58,7 @@ export default function Plans1({ subheader, title, text, image }) {
               <ListFlex>
                 <BsFillLightningChargeFill style={IconStyle} />
                 <div>
-                  <h3 className="bold subheader">
+                  <h3 className="bold subheader italics">
                     Cultivate Emotional Strength
                   </h3>
                   <p>
@@ -68,7 +72,7 @@ export default function Plans1({ subheader, title, text, image }) {
               <ListFlex>
                 <BsFillLightningChargeFill style={IconStyle} />
                 <div>
-                  <h3 className="bold subheader">
+                  <h3 className="bold subheader italics">
                     Become A Confident Decision Maker
                   </h3>
                   <p>
@@ -82,7 +86,9 @@ export default function Plans1({ subheader, title, text, image }) {
               <ListFlex>
                 <BsFillLightningChargeFill style={IconStyle} />
                 <div>
-                  <h3 className="bold subheader">Find Your Authentic Voice</h3>
+                  <h3 className="bold subheader italics">
+                    Find Your Authentic Voice
+                  </h3>
                   <p>
                     Break free from the limitations imposed by others and
                     discover your own unique identity. Unleash the power of
@@ -93,15 +99,14 @@ export default function Plans1({ subheader, title, text, image }) {
               </ListFlex>
             </List>
             <hr />
-            <p>{text}</p>
             {/* <div
               dangerouslySetInnerHTML={{
                 __html: `${text}`,
               }}
             ></div> */}
-            <ButtonPrimary href="/contact">
+            <ButtonSecondaryDark href="/contact">
               book a free 30-minute consultation &#8594;
-            </ButtonPrimary>
+            </ButtonSecondaryDark>
           </div>
           <Img>
             <Image

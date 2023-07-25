@@ -20,6 +20,7 @@ export default function LayoutJs({ children }) {
       <Seo title="Become Conquer" description="Mindset coach." />
       <Header />
       <main>{children}</main>
+      <FinanceBanner />
       <Footer />
     </Wrapper>
   );

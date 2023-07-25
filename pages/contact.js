@@ -14,7 +14,7 @@ export default function Contact() {
       <Banner
         img="http://www.become-conquer.purpleparrotwebsites.com/wp-content/uploads/2023/07/X1264A-0081AV-2048px.jpg"
         title="start here to change your life!"
-        subheader="adriana van der merwe | Become & conquer | Mindset & Trauma Coach"
+        subheader="Adriana D. Marvel | Become & conquer | Mindset & Trauma Coach"
         description="Have questions about the Break Up With Your Old Self? Looking for a professional speaker?"
       />
       <FormContact title="Contact & Booking Form" />

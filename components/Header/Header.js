@@ -145,8 +145,7 @@ export default function HeaderBasic() {
             <div className={styles.logoContainer}>
               <Link className={styles.styledLink} href="/">
                 <div>
-                  <h3 className=" light">become & conquer</h3>
-                  <p className="sig light">with adriana</p>
+                  <h3 className=" light">become & conquer coaching</h3>
                 </div>
                 {/* <Image
                   src="/bc-logo.svg"

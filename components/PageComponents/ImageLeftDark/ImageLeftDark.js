@@ -63,7 +63,7 @@ export default function ImageLeftDark({
                   __html: `${body}`,
                 }}
               />
-              {signature ? <p className="sig">Adriana Van Der Merwe</p> : null}
+              {signature ? <p className="sig">Adriana D. Marvel</p> : null}
 
               {button && link ? (
                 <ButtonPrimary href={link}>{button}</ButtonPrimary>

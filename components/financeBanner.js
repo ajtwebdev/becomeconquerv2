@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { ButtonPrimary } from "./buttons";
+import { AnchorPrimary } from "./buttons";
 import { Container, Section } from "./layoutComponents";
 import Image from "next/image";
 
 const Wrapper = styled.div`
-  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/finance-banner.jpg"),
-    rgba(255, 255, 255, 0.7);
+  background: url("http://www.become-conquer.purpleparrotwebsites.com/wp-content/uploads/2023/06/mindset-coach-edmonton.png"),
+    rgba(255, 255, 255, 0.8);
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
@@ -14,6 +14,8 @@ const Wrapper = styled.div`
   padding: 4em;
   position: relative;
   z-index: 2;
+  height: 100%;
+  min-height: 60vh;
 
   .finance-img {
     position: absolute;
@@ -25,28 +27,29 @@ const Wrapper = styled.div`
 
 export default function FinanceBanner() {
   return (
-    <Section>
-      <Container>
-        <Wrapper>
+    <Wrapper>
+      <Section>
+        <Container className="spacing">
           <div>
-            <p className="subheader">get the landscape financing you need</p>
-            <h2 className="title">payment plans to match any budget</h2>
+            <h2 className="title">Join 75+ members in our Facebook Group!</h2>
           </div>
           <p>
-            At Project Landscape Ltd., we are constantly reviewing and
-            negotiating preferred pricing arrangements with our suppliers and
-            trade partners to get you the best value for your money.
+            🤗Welcome to our transformative coaching community on Facebook! Join
+            us for a supportive space where you can unlock your potential,
+            embrace personal growth, and create positive changes. Our expert
+            coach and speaker will guide you on a journey of self-discovery,
+            resilience, and empowerment. Connect with like-minded individuals,
+            gain valuable tools, and celebrate your successes. 🙋‍♀️Ready to unlock
+            the extraordinary?
           </p>
-          <ButtonPrimary href="/financing">view payment plans</ButtonPrimary>
-          <Image
-            className="finance-img"
-            src="/finance-it.jpg"
-            alt="affordable calgary landscaping financing"
-            width={100}
-            height={100}
-          />
-        </Wrapper>
-      </Container>
-    </Section>
+          <AnchorPrimary
+            target="_popup"
+            href="https://www.facebook.com/groups/254319370592512/?ref=share&mibextid=S66gvF"
+          >
+            Join now!
+          </AnchorPrimary>
+        </Container>
+      </Section>
+    </Wrapper>
   );
 }

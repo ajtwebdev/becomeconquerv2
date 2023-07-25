@@ -73,14 +73,6 @@ export default function Footer() {
                           Edmonton, AB
                         </a>
                       </li>
-                      <li>
-                        <a className={styles.contactLink} href="#">
-                          <div>
-                            <FaRegClock style={IconStyle} />
-                          </div>
-                          9 AM - 5 PM Mon - Fri
-                        </a>
-                      </li>
                     </ul>
                   </div>
                   <div className={styles.socials}>
@@ -165,7 +157,12 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link className={styles.styledLink} href="/contact">
-                      contact & booking
+                      contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className={styles.styledLink} href="/booking">
+                      book now
                     </Link>
                   </li>
                 </ul>
