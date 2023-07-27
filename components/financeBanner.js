@@ -31,7 +31,9 @@ export default function FinanceBanner() {
       <Section>
         <Container className="spacing">
           <div>
-            <h2 className="title">Join 75+ members in our Facebook Group!</h2>
+            <h2 className="title">
+              Surround yourself with like-minds in our Facebook Group!
+            </h2>
           </div>
           <p>
             🤗Welcome to our transformative coaching community on Facebook! Join

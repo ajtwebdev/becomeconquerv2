@@ -32,6 +32,11 @@ const Img = styled.div`
   }
 `;
 
+const Quote = styled.div`
+  padding: 2em;
+  box-shadow: var(--shadow-light-accent);
+`;
+
 export default function ImageLeftDark({
   subheader,
   title,
@@ -63,7 +68,14 @@ export default function ImageLeftDark({
                   __html: `${body}`,
                 }}
               />
-              {signature ? <p className="sig">Adriana D. Marvel</p> : null}
+              {signature ? (
+                <Quote className="">
+                  <p className="italics subheader">
+                    Don't die with the music still inside you.
+                  </p>
+                  <p className="sig">~ Adriana D. Marvel</p>
+                </Quote>
+              ) : null}
 
               {button && link ? (
                 <ButtonPrimary href={link}>{button}</ButtonPrimary>

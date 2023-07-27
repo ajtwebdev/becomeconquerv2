@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Container, Section } from "components/layoutComponents";
+import { Container, Section, GridThree } from "components/layoutComponents";
 import styled from "styled-components";
 import { FaStar } from "react-icons/fa";
 
@@ -51,6 +51,8 @@ const FlexStars = styled.div`
   }
 `;
 
+const Video = styled.div``;
+
 const ReviewBox = (props) => {
   return (
     <ReviewWrapper className="spacing">
@@ -77,27 +79,28 @@ export default function Testimonial({ title, testimonials }) {
     slidesToScroll: 1,
   };
   return (
-    <Wrapper>
-      <Section>
-        <Container>
-          <SliderWrapper>
-            <Slider {...settings}>
-              <ReviewBox
-                title="I'm focused and motivated in the face of adversity"
-                review="I recently had the privilege of working with Adriana as my motivational coach and I have to say it was a life changing experience. She has a Unique ability to Connect with people and bring the best in them. Her passion for personal development is impressive and she truly knows how to inspire and motivate others."
-                name="​Gabriela S, Calgary, AB"
-              />
-              <ReviewBox
-                title="real results happened fast for me"
-                review="Adriana created a transformational experience true to the word. A dear friend of mine was sharing about his experience with her work, and I sensed a solid experience is available."
-                name="Aly Y, British Columbia"
-              />
-              <ReviewBox
-                title="her wisdom elevated my mindset"
-                review="For years, I have been struggling with being a people pleaser. Thinking I was doing the right thing in helping people to only find out I had been sacrificing my life, my energy, always feeling tired. After a few coaching sessions with Adriana, I regained control of my life, feeling empowered, feeling happy, loving life on a whole new level."
-                name="William C, Edmonton, AB"
-              />
-              {/* {testimonials.map(testimonial => {
+    <div className="spacing">
+      <Wrapper>
+        <Section className="spacing">
+          <Container>
+            <SliderWrapper>
+              <Slider {...settings}>
+                <ReviewBox
+                  title="I'm focused and motivated in the face of adversity"
+                  review="I recently had the privilege of working with Adriana as my motivational coach and I have to say it was a life changing experience. She has a Unique ability to Connect with people and bring the best in them. Her passion for personal development is impressive and she truly knows how to inspire and motivate others."
+                  name="​Gabriela S, Calgary, AB"
+                />
+                <ReviewBox
+                  title="real results happened fast for me"
+                  review="Adriana created a transformational experience true to the word. A dear friend of mine was sharing about his experience with her work, and I sensed a solid experience is available."
+                  name="Aly Y, British Columbia"
+                />
+                <ReviewBox
+                  title="her wisdom elevated my mindset"
+                  review="For years, I have been struggling with being a people pleaser. Thinking I was doing the right thing in helping people to only find out I had been sacrificing my life, my energy, always feeling tired. After a few coaching sessions with Adriana, I regained control of my life, feeling empowered, feeling happy, loving life on a whole new level."
+                  name="William C, Edmonton, AB"
+                />
+                {/* {testimonials.map(testimonial => {
                 return (
                   <ReviewBox
                     title={testimonial.testimonialTitle}
@@ -106,10 +109,62 @@ export default function Testimonial({ title, testimonials }) {
                   />
                 )
               })} */}
-            </Slider>
-          </SliderWrapper>
-        </Container>
-      </Section>
-    </Wrapper>
+              </Slider>
+            </SliderWrapper>
+          </Container>
+        </Section>
+      </Wrapper>
+      <hr />
+      <Container>
+        <GridThree>
+          <Video style={{ position: "relative" }}>
+            <iframe
+              src="https://www.youtube.com/embed/_AxZHpqQXao"
+              frameBorder={0}
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="Turning your mess into your mastery with Adriana Van Der Merwe"
+              style={{
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "400px",
+              }}
+            />
+          </Video>
+          <Video style={{ position: "relative" }}>
+            <iframe
+              src="https://www.youtube.com/embed/8X7IBUpDvfo"
+              frameBorder={0}
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="Turning your mess into your mastery with Adriana Van Der Merwe"
+              style={{
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "400px",
+              }}
+            />
+          </Video>
+          <Video style={{ position: "relative" }}>
+            <iframe
+              src="https://www.youtube.com/embed/vwcyoZN37bE"
+              frameBorder={0}
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="Turning your mess into your mastery with Adriana Van Der Merwe"
+              style={{
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "400px",
+              }}
+            />
+          </Video>
+        </GridThree>
+      </Container>
+      ;
+    </div>
   );
 }

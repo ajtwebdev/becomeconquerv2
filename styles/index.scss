@@ -49,7 +49,7 @@
   --shadow-bottom: 0 4px 2px -2px rgba(0, 0, 0, 0.25);
   --shadow-bottom-accent: 0 4px 2px -2px rgba(47, 184, 20, 0.25);
   --shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  --shadow-light-accent: rgba(47, 184, 20, 0.2) 0px 8px 24px;
+  --shadow-light-accent: rgba(242, 117, 125, 0.2) 0px 8px 24px;
   --br: 3px;
 }
 
@@ -155,7 +155,7 @@ hr {
 
 .sig {
   font-family: var(--ff-sig);
-  font-size: var(--fs-1);
+  font-size: var(--fs-3);
   text-transform: capitalize;
 }
 
