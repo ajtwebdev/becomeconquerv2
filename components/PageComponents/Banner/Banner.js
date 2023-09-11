@@ -16,7 +16,6 @@ const Flex = styled.div`
 const Wrapper = styled.div`
   grid-row: 1 / -1;
   grid-column: 1 / -1;
-  z-index: 1;
   background: ${(props) => `url(${props.img})`}, rgba(0, 0, 0, 0.4);
   // background: url("../../../images/hero.jpg")), rgba(0, 0, 0, 0.4);
   background-blend-mode: overlay;
