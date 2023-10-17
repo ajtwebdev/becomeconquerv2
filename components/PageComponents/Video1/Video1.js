@@ -76,7 +76,7 @@ export default function Video1({ subheader, title, text, video }) {
                   <ButtonPrimaryDark href="/about">
                     more about adriana
                   </ButtonPrimaryDark>
-                  <ButtonPrimary href="/contact">
+                  <ButtonPrimary href="/booking">
                     book your consultation
                   </ButtonPrimary>
                 </Actions>

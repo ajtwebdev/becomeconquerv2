@@ -104,7 +104,7 @@ export default function Plans1({ subheader, title, text, image }) {
                 __html: `${text}`,
               }}
             ></div> */}
-            <ButtonSecondaryDark href="/contact">
+            <ButtonSecondaryDark href="/booking">
               book a free 30-minute consultation &#8594;
             </ButtonSecondaryDark>
           </div>

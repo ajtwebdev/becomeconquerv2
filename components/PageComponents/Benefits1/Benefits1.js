@@ -136,7 +136,7 @@ export default function Benefits1({ subheader, title, benefitContent }) {
             })}
           </Flex>
           <center>
-            <ButtonPrimary href="/contact">
+            <ButtonPrimary href="/booking">
               book your consultation
             </ButtonPrimary>
           </center>

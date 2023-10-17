@@ -55,7 +55,7 @@ export default function Cta1({ subheader, title, body, image }) {
               />
             ) : null}
 
-            <ButtonPrimaryDark href="/contact">
+            <ButtonPrimaryDark href="/booking">
               get your quote &#8594;
             </ButtonPrimaryDark>
           </Container>

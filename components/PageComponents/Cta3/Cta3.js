@@ -36,7 +36,7 @@ export default function Cta3({ title, description, image }) {
               unveiling a new path of personal growth, resilience, & boundless
               success.
             </p>
-            <ButtonSecondaryDark href="/contact">
+            <ButtonSecondaryDark href="/booking">
               get your free consultation &#8594;
             </ButtonSecondaryDark>
           </Text>

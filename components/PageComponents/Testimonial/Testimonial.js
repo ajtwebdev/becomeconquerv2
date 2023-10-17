@@ -115,7 +115,10 @@ export default function Testimonial({ title, testimonials }) {
         </Section>
       </Wrapper>
       <hr />
-      <Container>
+      <Container className="spacing">
+        <div className="center">
+          <h2 className="title">client testimonials</h2>
+        </div>
         <GridThree>
           <Video style={{ position: "relative" }}>
             <iframe

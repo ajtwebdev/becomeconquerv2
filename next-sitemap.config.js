@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://projectlandscape.ca",
+  siteUrl: process.env.SITE_URL || "https://becomeconquer.com/",
   generateRobotsTxt: true, // (optional)
   // ...other options
 };

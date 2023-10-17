@@ -163,6 +163,11 @@ export default function HeaderBasic() {
               </Burger>
               <NavList nav={nav}>
                 <li>
+                  <Link className={styles.styledNavLink} href="/">
+                    home
+                  </Link>
+                </li>
+                <li>
                   <Link className={styles.styledNavLink} href="/about">
                     about
                   </Link>

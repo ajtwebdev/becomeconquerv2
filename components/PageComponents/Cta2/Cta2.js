@@ -67,7 +67,7 @@ export default function Cta2({ title, image, body }) {
           <Text className="spacing">
             <h2 className="title">{title}</h2>
             <p>{body}</p>
-            <ButtonPrimaryDark href="/contact">get quote</ButtonPrimaryDark>
+            <ButtonPrimaryDark href="/booking">get quote</ButtonPrimaryDark>
           </Text>
         </Grid>
       </Container>
